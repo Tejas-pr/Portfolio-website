@@ -8,10 +8,11 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <motion.div
+    id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center text-white gap-6 px-5 h-[80vh] md:mt-0"
+      className="flex flex-col items-center justify-center text-white gap-6 px-5 h-[80vh] md:mt-16"
     >
       {/* Greeting */}
       <motion.h3

@@ -3,7 +3,7 @@ import logo from "../image/logo.svg";
 import logo2 from "../image/logo-r.png";
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { BiLogoGmail, BiMenu, BiX } from "react-icons/bi";
-
+import { motion } from "framer-motion";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fxed z-10 top-0 flex items-center w-full justify-between px-16 py-3 text-white backdrop-blur-md md:justify-evenly">
+      <nav className="fixed z-10 top-0 flex items-center w-full justify-between px-16 py-3 text-white backdrop-blur-md md:justify-evenly">
         <a href="#home" className="">
             <img src={logo2} alt="logo" height={50} width={50}/>
         </a>
