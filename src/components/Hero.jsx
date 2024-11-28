@@ -3,23 +3,24 @@ import { HiDownload } from "react-icons/hi";
 import { IoMdCall } from "react-icons/io";
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
+import CvPdf from "../CV/TejasPR_resume.pdf"
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <motion.div
-    id="home"
+      id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center text-white gap-6 px-5 h-[80vh] md:mt-16"
+      className="flex flex-col items-center justify-center text-white gap-6 px-5 h-[80vh] mt-16 mb-28 md:mb-0"
     >
       {/* Greeting */}
       <motion.h3
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="hidden md:flex text-2xl text-orange-400 font-semibold md:-translate-x-40 md:translate-y-8"
+        className="mt-8 text-2xl text-orange-400 font-semibold md:-translate-x-40 md:translate-y-8"
       >
         Hello, I'm
       </motion.h3>
@@ -83,17 +84,21 @@ const Hero = () => {
       >
         <button
           type="button"
+          
           className="flex items-center gap-2 px-6 py-3 text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:ring-[#F7BE38]/50 rounded-lg text-sm font-medium transition"
         >
           <HiDownload />
-          Download CV
+          <a 
+          href={CvPdf}
+          download="Tejas_PR-CV.pdf"
+          >Download CV</a>
         </button>
         <button
           type="button"
           className="flex items-center gap-2 px-6 py-3 text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:ring-[#F7BE38]/50 rounded-lg text-sm font-medium transition"
         >
           <IoMdCall />
-          Contact Me
+          <a href="mailto:tejas.teju02@gmail.com">Contact Me</a>
         </button>
       </motion.div>
 
@@ -140,7 +145,7 @@ const Hero = () => {
                 delay: 1.4 + index * 0.1,
                 ease: [0, 0.71, 0.2, 1.01],
               }}
-              className={`cursor-pointer text-xl opacity-70 transition-all duration-300 ${hoverColor}`}
+              className={`cursor-pointer text-2xl opacity-70 px-1 transition-all duration-300 ${hoverColor}`}
             >
               <a href={href}>{icon}</a>
             </motion.li>

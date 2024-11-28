@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import image1 from "../image/img1.png";
 import image2 from "../image/img2.png";
+import image3 from "../image/img3.png";
 
 // ScrollReveal Component (motion wrapper for animation)
 const ScrollReveal = ({ children }) => {
@@ -20,12 +21,14 @@ const ScrollReveal = ({ children }) => {
 const ProjectCard = ({ project }) => {
   return (
     <ScrollReveal>
-      <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24 rounded-lg shadow-sm shadow-slate-700 p-8">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px]"
-        />
+      <div className="flex flex-col items-center gap-8 md:flex-row md:gap-20 rounded-lg shadow-sm shadow-slate-800 p-8">
+        <a href={project.liveLink}>
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[400px]"
+          />
+        </a>
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-3">
             <div className="text-xl font-semibold">{project.title}</div>
@@ -52,9 +55,12 @@ const ProjectCard = ({ project }) => {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap gap-1">
             {project.technologies.map((tech, index) => (
-              <span key={index} className="rounded-md p-2 bg-gray-800 text-white">
+              <span
+                key={index}
+                className="rounded-md px-2 py-1 bg-gray-800 text-white"
+              >
                 {tech}
               </span>
             ))}
@@ -68,21 +74,46 @@ const ProjectCard = ({ project }) => {
 const Projects = () => {
   const projectsData = [
     {
-      image: image1,
-      title: "Shoptopia E-commerce Platform",
+      image: image2,
+      title: "AI PDF Chatbot Fullstack",
       description:
-        "A full-stack e-commerce platform built with modern technologies.",
-      technologies: ["React", "TailwindCSS", "NodeJS"],
+        "AI PDF Chatbot Fullstack is a SaaS platform designed to help users interact with and analyze PDF documents using advanced AI.",
+      technologies: [
+        "NextJS",
+        "Clerk",
+        "LangChain",
+        "Google Generative AI",
+        "Paypal",
+        "Convex",
+        "Tiptap",
+        "PDF-Parse",
+      ],
+      githubLink: "https://github.com/username/project1",
+      liveLink: "https://project1.com",
+    },
+    {
+      image: image3,
+      title: "Weather Sphere",
+      description:
+        "Develop a real-time data processing system to monitor weather conditions and provide summarized insights using rollups and aggregates.",
+      technologies: [
+        "MERN",
+        "TailwindCSS",
+        "Framer-Motion",
+        "Chatjs",
+        "OpenWeatherMap API",
+      ],
       githubLink: "https://github.com/Tejas-pr/Shoptopia",
       liveLink: "https://shoptopia-frontend.vercel.app/",
     },
     {
-      image: image2,
-      title: "Project 1",
-      description: "Description of Project 1.",
-      technologies: ["React", "TailwindCSS", "NodeJS"],
-      githubLink: "https://github.com/username/project1",
-      liveLink: "https://project1.com",
+      image: image1,
+      title: "Shoptopia E-commerce Platform",
+      description:
+        "A Shoptopia is an e-commerce platform where users can browse, add, and view products.An admin panel is available for managing products efficiently",
+      technologies: ["MERN", "TailwindCSS", "Framer-Motion", "GSAP"],
+      githubLink: "https://github.com/Tejas-pr/Shoptopia",
+      liveLink: "https://shoptopia-frontend.vercel.app/",
     },
   ];
 
@@ -92,7 +123,9 @@ const Projects = () => {
       className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-24"
     >
       <ScrollReveal>
-        <h1 className="text-4xl font-normal text-white md:text-6xl">My Projects</h1>
+        <h1 className="text-4xl font-normal text-white md:text-6xl">
+          My Projects
+        </h1>
       </ScrollReveal>
       <div className="flex w-full max-w-[1000px] flex-col gap-16">
         {projectsData.map((project, index) => (
