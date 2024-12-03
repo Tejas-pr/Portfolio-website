@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import image1 from "../image/img1.png";
 import image2 from "../image/img2.png";
 import image3 from "../image/img3.png";
+import image4 from "../image/img4.png";
 
-// ScrollReveal Component (motion wrapper for animation)
 const ScrollReveal = ({ children }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
+      transition={{ delay:0.5, duration: 0.8 }}
     >
       {children}
     </motion.div>
@@ -90,6 +90,15 @@ const Projects = () => {
       ],
       githubLink: "https://github.com/username/project1",
       liveLink: "https://project1.com",
+    },
+    {
+      image: image4,
+      title: "Space Landing Page",
+      description:
+        "A visually stunning Space Landing Page built using React, TypeScript, and Tailwind CSS. This project creates an engaging and modern UI to showcase space-related content.",
+      technologies: ["React", "TailwindCSS", "Typescript"],
+      githubLink: "https://github.com/Tejas-pr/Space-ts",
+      liveLink: "https://space-ts-landingpage.vercel.app/",
     },
     {
       image: image3,
