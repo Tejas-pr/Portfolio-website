@@ -1,4 +1,5 @@
 import Contact from "./components/Contact";
+import Expirence from "./components/Expirence";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Hero />
         <Tech />
+        <Expirence />
         <Projects />
         <Contact />
       </main>

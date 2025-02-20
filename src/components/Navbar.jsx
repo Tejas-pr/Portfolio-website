@@ -61,6 +61,19 @@ const Navbar = () => {
               delay: 1,
               ease: [0, 0.71, 0.2, 1.01],
             }}
+            href="#expirence"
+            className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
+          >
+            <li>Experience</li>
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.5,
+              delay: 1,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
             href="#projects"
             className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
           >
