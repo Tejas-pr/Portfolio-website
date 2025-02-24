@@ -89,7 +89,7 @@ const Projects = () => {
         "PDF-Parse",
       ],
       githubLink: "https://github.com/username/project1",
-      liveLink: "https://project1.com",
+      liveLink: "https://ai-pdf-chatbot-fullstack.vercel.app/",
     },
     {
       image: image4,
