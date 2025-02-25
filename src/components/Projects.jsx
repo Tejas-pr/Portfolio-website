@@ -112,8 +112,8 @@ const Projects = () => {
         "Chatjs",
         "OpenWeatherMap API",
       ],
-      githubLink: "https://github.com/Tejas-pr/Shoptopia",
-      liveLink: "https://shoptopia-frontend.vercel.app/",
+      githubLink: "https://github.com/Tejas-pr/WeatherSphere",
+      liveLink: "https://weather-sphere-frontend.vercel.app/",
     },
     {
       image: image1,
