@@ -19,14 +19,14 @@ const Tech = () => {
   return (
     <div
       id="tech"
-      className="flex min-h-[70vh] w-full flex-col items-center justify-center gap-16 md:gap-32"
+      className="flex min-h-[70vh] w-full flex-col items-center justify-center gap-16 md:gap-16"
     >
       <motion.h1
         variants={variants}
         initial="hidden"
         transition={{ duration: 0.5, delay: 0.6 }}
         whileInView="visible"
-        className="text-4xl font-normal text-white md:text-6xl"
+        className="text-4xl font-normal mt-20 text-white md:text-6xl"
       >
         Technologies
       </motion.h1>
