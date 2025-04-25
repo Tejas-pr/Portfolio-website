@@ -46,7 +46,7 @@ const ProjectCard = ({ project }) => {
 const Expirence = () => {
   const projectsData = [
     {
-      title: "React Developer Intern, ETFkidukaan",
+      title: "Full-Stack Developer Intern, ETFkidukaan",
       description: [
         "Developed a full-stack web application using React JS",
         "Developing a responsive ETF website using React.js. ",
