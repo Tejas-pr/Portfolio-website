@@ -46,13 +46,23 @@ const ProjectCard = ({ project }) => {
 const Expirence = () => {
   const projectsData = [
     {
-      title: "React Developer Intern, ETFkidukaan",
+      title: "Full-Stack Developer Intern, ETFkidukaan",
       description: [
         "Developed a full-stack web application using React JS",
         "Developing a responsive ETF website using React.js. ",
         "I’m contributing in full website UI and functionality’s changes across the website. ",
       ],
       companyLink: "https://etfkidukaan.in/",
+    },
+    {
+      title: "Software Engineer, Cron Labs - present",
+      description: [
+        "Built the frontend for a video generative AI tool, showcasing dynamically loaded videos to simulate generation flow",
+        "Designed a two-page interface: one for video generation and another featuring editing capabilities.",
+        "Integrated video trimming and merging functionality using FFmpeg, enabling in-browser editing.",
+        "Implemented export and video pooling features to allow iterative editing and reuse of generated content.",
+      ],
+      companyLink: "https://www.linkedin.com/company/strategify-analytics/?originalSubdomain=in",
     }
   ];
 
