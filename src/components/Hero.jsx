@@ -3,7 +3,7 @@ import { HiDownload } from "react-icons/hi";
 import { IoMdCall } from "react-icons/io";
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
-import CvPdf from "../CV/TejasPR_resume.pdf"
+import CvPdf from "../CV/TejasPR_resume.pdf";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -64,11 +64,15 @@ const Hero = () => {
         }}
         className="text-center text-md font-thin max-w-3xl leading-relaxed"
       >
-        A passionate Software Developer specializing in full-stack development.
-        I work with modern technologies like React, TypeScript, Node.js, and
-        MongoDB to create scalable, secure applications. With expertise in
-        front-end design and back-end engineering, I aim to deliver seamless and
-        impactful digital solutions.
+        I’m a passionate Software Developer specializing in full-stack
+        development, experienced in building scalable applications using Java,
+        JavaScript/TypeScript, React.js, Next.js, Node.js, and Express.js. My
+        expertise spans front-end design with HTML, CSS, and TailwindCSS, to
+        back-end engineering with MongoDB, PostgreSQL, and Prisma ORM. I also
+        work with AWS services (EC2, Load Balancer, AMI, SSH, ASG), Docker, and
+        Git/GitHub to deliver secure and efficient solutions. Currently, I’m
+        expanding my skill set by learning Go (Golang) to strengthen my backend
+        and systems programming capabilities.
       </motion.p>
 
       {/* Buttons */}
@@ -84,14 +88,12 @@ const Hero = () => {
       >
         <button
           type="button"
-          
           className="flex items-center gap-2 px-6 py-3 text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:ring-[#F7BE38]/50 rounded-lg text-sm font-medium transition"
         >
           <HiDownload />
-          <a 
-          href={CvPdf}
-          download="Tejas_PR-CV.pdf"
-          >Download CV</a>
+          <a href={CvPdf} download="Tejas_PR-CV.pdf">
+            Download CV
+          </a>
         </button>
         <button
           type="button"

@@ -7,7 +7,7 @@ const ScrollReveal = ({ children }) => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay:0.5, duration: 0.8 }}
+      transition={{ delay: 0.5, duration: 0.8 }}
     >
       {children}
     </motion.div>
@@ -46,6 +46,17 @@ const ProjectCard = ({ project }) => {
 const Expirence = () => {
   const projectsData = [
     {
+      title: "Software Engineer, Cron Labs - present",
+      description: [
+        "Built the frontend for a video generative AI tool, showcasing dynamically loaded videos to simulate generation flow",
+        "Designed a two-page interface: one for video generation and another featuring editing capabilities.",
+        "Integrated video trimming and merging functionality using FFmpeg, enabling in-browser editing.",
+        "Implemented export and video pooling features to allow iterative editing and reuse of generated content.",
+      ],
+      companyLink:
+        "https://www.linkedin.com/company/strategify-analytics/?originalSubdomain=in",
+    },
+    {
       title: "Full-Stack Developer Intern, ETFkidukaan",
       description: [
         "Developed a full-stack web application using React JS",
@@ -54,29 +65,19 @@ const Expirence = () => {
       ],
       companyLink: "https://etfkidukaan.in/",
     },
-    {
-      title: "Software Engineer, Cron Labs - present",
-      description: [
-        "Built the frontend for a video generative AI tool, showcasing dynamically loaded videos to simulate generation flow",
-        "Designed a two-page interface: one for video generation and another featuring editing capabilities.",
-        "Integrated video trimming and merging functionality using FFmpeg, enabling in-browser editing.",
-        "Implemented export and video pooling features to allow iterative editing and reuse of generated content.",
-      ],
-      companyLink: "https://www.linkedin.com/company/strategify-analytics/?originalSubdomain=in",
-    }
   ];
 
   return (
     <div
       id="expirence"
-      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-24"
+      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-24 mt-20"
     >
       <ScrollReveal>
         <h1 className="text-4xl font-normal text-white md:text-6xl">
           Experience
         </h1>
       </ScrollReveal>
-      <div className="flex w-full max-w-[1000px] flex-col gap-16">
+      <div className="flex w-full max-w-[1000px] flex-col gap-10">
         {projectsData.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}

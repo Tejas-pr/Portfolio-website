@@ -5,6 +5,7 @@ import image2 from "../image/img2.png";
 import image3 from "../image/img3.png";
 import image4 from "../image/img4.png";
 import image5 from "../image/img5.png";
+import image6 from "../image/img6.png";
 
 const ScrollReveal = ({ children }) => {
   return (
@@ -12,7 +13,7 @@ const ScrollReveal = ({ children }) => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay:0.5, duration: 0.8 }}
+      transition={{ delay: 0.5, duration: 0.8 }}
     >
       {children}
     </motion.div>
@@ -75,6 +76,22 @@ const ProjectCard = ({ project }) => {
 const Projects = () => {
   const projectsData = [
     {
+      image: image6,
+      title: "Real-Time Chat App",
+      description:
+        "A full-stack real-time chat application built with a modern monorepo architecture using Turborepo. It features instant messaging powered by WebSockets, secure user authentication, and persistent message storage with Prisma ORM. The app is designed with a clean UI using TailwindCSS and TypeScript for type safety, ensuring both performance and scalability.",
+      technologies: [
+        "Turborepo",
+        "Next.js",
+        "WebSocket",
+        "Prisma",
+        "TailwindCSS",
+        "TypeScript",
+      ],
+      githubLink: "https://github.com/Tejas-pr/chatapp",
+      liveLink: "https://github.com/Tejas-pr/chatapp",
+    },
+    {
       image: image4,
       title: "Space Landing Page",
       description:
@@ -88,11 +105,7 @@ const Projects = () => {
       title: "Paytm Clone",
       description:
         "This project is a Paytm clone built using Reactjs, Tailwindcss, Node.js, Express, and MongoDB with Mongoose. The primary goal is to understand and implement user-to-user transactions using MongoDB sessions to ensure atomicity and consistency.",
-      technologies: [
-        "ReactJs",
-        "MERN",
-        "TailwindCSS",
-      ],
+      technologies: ["ReactJs", "MERN", "TailwindCSS"],
       githubLink: "https://github.com/Tejas-pr/paytm",
       liveLink: "https://github.com/Tejas-pr/paytm",
     },
@@ -121,7 +134,7 @@ const Projects = () => {
         "A Shoptopia is an e-commerce platform where users can browse, add, and view products.An admin panel is available for managing products efficiently",
       technologies: ["MERN", "TailwindCSS", "Framer-Motion", "GSAP"],
       githubLink: "https://github.com/Tejas-pr/Shoptopia",
-      liveLink: "https://shoptopia-frontend.vercel.app/",
+      liveLink: "https://github.com/Tejas-pr/Shoptopia",
     },
     {
       image: image3,
@@ -134,9 +147,9 @@ const Projects = () => {
         "Framer-Motion",
         "Chatjs",
         "OpenWeatherMap API",
-      ],  
+      ],
       githubLink: "https://github.com/Tejas-pr/WeatherSphere",
-      liveLink: "https://weather-sphere-frontend.vercel.app/",
+      liveLink: "https://github.com/Tejas-pr/WeatherSphere",
     },
   ];
 

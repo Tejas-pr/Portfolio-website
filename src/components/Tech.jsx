@@ -1,4 +1,3 @@
-import React from "react";
 import {
   BiLogoJavascript,
   BiLogoMongodb,
@@ -9,6 +8,8 @@ import {
 } from "react-icons/bi";
 import { SiExpress, SiMysql } from "react-icons/si";
 import { motion } from "framer-motion";
+import { FaGolang } from "react-icons/fa6";
+import { SiPrisma, SiNextdotjs } from "react-icons/si";
 
 const Tech = () => {
   const variants = {
@@ -94,6 +95,30 @@ const Tech = () => {
           whileInView="visible"
         >
           <SiMysql className="cursor-pointer text-[50px] text-orange-500 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          transition={{ duration: 0.5, delay: 1.3 }}
+          whileInView="visible"
+        >
+          <SiPrisma className="cursor-pointer text-[50px] text-white transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[100px]" />
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          transition={{ duration: 0.5, delay: 1.3 }}
+          whileInView="visible"
+        >
+          <FaGolang className="cursor-pointer text-[50px] text-[#00ADD8] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          transition={{ duration: 0.5, delay: 1.4 }}
+          whileInView="visible"
+        >
+          <SiNextdotjs className="cursor-pointer text-[50px] text-white transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[100px]" />
         </motion.div>
       </div>
     </div>
