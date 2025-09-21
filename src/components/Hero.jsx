@@ -13,7 +13,7 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center text-white gap-6 px-5 h-[80vh] mt-16 mb-28 md:mb-0"
+      className="flex flex-col items-center justify-center text-white gap-6 px-5 h-[80vh] md:mt-16 mb-28 md:mb-0 mt-[120px]"
     >
       {/* Greeting */}
       <motion.h3
@@ -48,7 +48,7 @@ const Hero = () => {
           delay: 0.6,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="text-xl font-light"
+        className="text-2xl font-light"
       >
         Full Stack Developer
       </motion.p>
@@ -62,17 +62,9 @@ const Hero = () => {
           delay: 0.8,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="text-center text-md font-thin max-w-3xl leading-relaxed"
+        className="text-center text-md font-thin max-w-4xl leading-relaxed"
       >
-        I’m a passionate Software Developer specializing in full-stack
-        development, experienced in building scalable applications using Java,
-        JavaScript/TypeScript, React.js, Next.js, Node.js, and Express.js. My
-        expertise spans front-end design with HTML, CSS, and TailwindCSS, to
-        back-end engineering with MongoDB, PostgreSQL, and Prisma ORM. I also
-        work with AWS services (EC2, Load Balancer, AMI, SSH, ASG), Docker, and
-        Git/GitHub to deliver secure and efficient solutions. Currently, I’m
-        expanding my skill set by learning Go (Golang) to strengthen my backend
-        and systems programming capabilities.
+        I’m a passionate Full-Stack Developer focused on building scalable, maintainable, and high-performance applications. I enjoy designing seamless user experiences, architecting robust back-end systems, and solving complex problems with efficient and secure solutions. I thrive in collaborative environments and continuously seek to expand my skills in modern technologies and best practices.
       </motion.p>
 
       {/* Buttons */}

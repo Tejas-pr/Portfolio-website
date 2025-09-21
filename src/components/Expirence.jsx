@@ -48,10 +48,11 @@ const Expirence = () => {
     {
       title: "Software Engineer, Cron Labs - present",
       description: [
-        "Built the frontend for a video generative AI tool, showcasing dynamically loaded videos to simulate generation flow",
-        "Designed a two-page interface: one for video generation and another featuring editing capabilities.",
-        "Integrated video trimming and merging functionality using FFmpeg, enabling in-browser editing.",
-        "Implemented export and video pooling features to allow iterative editing and reuse of generated content.",
+        "Delivered client-facing features for Cisco, improving UX and meeting stakeholder goals.",
+        "Built an interactive dashboard with draggable widgets for customizable user experiences.",
+        "Developed filtered dropdowns for smoother workflows and better performance.",
+        "Fixed bugs and polished UI/UX for a more stable, user-friendly platform.",
+        "Created frontend for video AI tool with in-browser trimming and merging."
       ],
       companyLink:
         "https://www.linkedin.com/company/strategify-analytics/?originalSubdomain=in",
@@ -59,9 +60,10 @@ const Expirence = () => {
     {
       title: "Full-Stack Developer Intern, ETFkidukaan",
       description: [
-        "Developed a full-stack web application using React JS",
-        "Developing a responsive ETF website using React.js. ",
-        "I’m contributing in full website UI and functionality’s changes across the website. ",
+        "Redesigned the UI with the UX team, boosting responsiveness and growing the user base by 22%.",
+        "Developed backend logic for landing page graphs, referral amount calculations, and coupon system.",
+        "Implemented blog management (add/delete), feedback pages, and user guidelines.",
+        "Merged the Free & Silver tiers into a Free tier and retained the gold tier, implementing the necessary backend logic to support the change.",
       ],
       companyLink: "https://etfkidukaan.in/",
     },
