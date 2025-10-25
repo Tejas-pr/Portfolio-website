@@ -6,6 +6,7 @@ import image3 from "../image/img3.png";
 import image4 from "../image/img4.png";
 import image5 from "../image/img5.png";
 import image6 from "../image/img6.png";
+import image7 from "../image/img7.png";
 
 const ScrollReveal = ({ children }) => {
   return (
@@ -76,6 +77,29 @@ const ProjectCard = ({ project }) => {
 const Projects = () => {
   const projectsData = [
     {
+      image: image7,
+      title: "Sketchly – AI-Powered Drawing App",
+      description:
+        "Interactive AI-powered drawing platform where users can draw shapes like rectangles, circles, triangles, and freehand strokes using a refined ShadCN UI. Built with a scalable monorepo architecture using Turborepo, Next.js, Prisma ORM, and TailwindCSS — featuring Better Auth for authentication and real-time collaboration powered by WebSockets. Includes BullMQ + Redis for job queueing, CI/CD-enabled automated Docker deployments, and LangChain-driven AI to generate shapes and assist with creativity.",
+      technologies: [
+        "Turborepo",
+        "Next.js",
+        "Prisma ORM",
+        "TailwindCSS",
+        "ShadCN UI",
+        "TypeScript",
+        "Better Auth",
+        "WebSocket",
+        "BullMQ + Redis",
+        "Docker & Docker Hub",
+        "CI/CD Pipeline",
+        "LangChain",
+        "Zod",
+      ],
+      githubLink: "https://github.com/Tejas-pr/Sketchly",
+      liveLink: "https://drawing.tejaspr.site/",
+    },
+    {
       image: image6,
       title: "Real-Time Chat App",
       description:
@@ -96,7 +120,7 @@ const Projects = () => {
       githubLink: "https://github.com/Tejas-pr/chatapp",
       liveLink: "https://github.com/Tejas-pr/chatapp",
     },
-        {
+    {
       image: image2,
       title: "AI PDF Chatbot Fullstack",
       description:
@@ -161,7 +185,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-24"
+      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 md:p-4 md:px-24"
     >
       <ScrollReveal>
         <h1 className="text-4xl font-normal text-white md:text-6xl">
